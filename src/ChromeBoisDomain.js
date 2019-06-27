@@ -43,10 +43,10 @@ export default class ChromeBoisDomain extends Component {
      event.persist()
      let keyPress = event.key
 
-     if (keyPress === "a") {
+     if (keyPress === "a" || keyPress === "+") {
         keyPress = "+"
         resize(keyPress)
-     } else if (keyPress === "s") {
+     } else if (keyPress === "s" || keyPress === "-") {
        keyPress = "-"
        resize(keyPress)
      } else {
